@@ -79,9 +79,9 @@ async function getData(){
   
     async function getEmployeesDetail() {
   
-        let url = "http://dummy.restapiexample.com/api/v1/employees";
+        
   
-        return fetch(url)
+        return fetch("http://dummy.restapiexample.com/api/v1/employees")
         .then(res => res.json())
         .then(response => {
             apiResponse = response;
