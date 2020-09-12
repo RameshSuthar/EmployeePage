@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>App</title>
+        <meta name="description" content="Employees Details App">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+ 
+        
+        <div class="control-view container" style="display: block;">
+            <div class="search">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="navbar-collapse" id="navbarSupportedContent">
+                      <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" id="employeeName" type="search" placeholder="Search" aria-label="Search" onkeyup="searchEmployee(event)">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="searchEmployee(event)">Search</button>
+                      </form>
+                    </div>
+                    <br>
+                    <div class="sort">
+                        <select name="sort" id="sort" onchange="sortBy()">
+                            <option value="">select sort type</option>
+                            <option value="name">sort by name</option>
+                            <option value="salary">sort by salary</option>
+                            <option value="age">sort by age</option>
+                        </select>
+                  </div>
+                  </nav>
+            </div>
+            <div class="sort">
+                
+            </div>
+        </div>
+
+
+        <div id="view-body" class="container flex-box" >
+            
+        </div>
+
+        <script src="script.js" async defer></script>
+    </body>
+</html>
